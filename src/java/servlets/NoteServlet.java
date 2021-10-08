@@ -19,7 +19,7 @@ import models.Note;
  */
 public class NoteServlet extends HttpServlet {
     private final String notePath = "/WEB-INF/note.txt";
- 
+
 
    
     @Override
@@ -30,7 +30,7 @@ public class NoteServlet extends HttpServlet {
         String title = br.readLine();
         String contents = br.readLine();
         br.close();
-        System.out.print(title);
+        
         
         
         Note note = new Note(title, contents);
